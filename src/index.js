@@ -5,7 +5,7 @@ dotenv.config()
 
 const app = express()
 
-const port = process.env.PORT || 4000
+const port = process.env.APP_PORT || 4000
 
 app.get('/', (req, res) => res.send(`Express server on Vercel port ${port}`))
 
