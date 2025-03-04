@@ -2,7 +2,7 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import express from 'express'
 import http from 'http'
-import { apolloServer } from './apollo/server.js'
+// import { apolloServer } from './apollo/server.js'
 
 dotenv.config()
 
@@ -14,10 +14,10 @@ const port = process.env.APP_PORT || 4000
 
 app.use(cors())
 
-app.use(
-  '/graphql',
-  express.json(),
-)
+// app.use(
+//   '/graphql',
+//   express.json(),
+// )
 
 app.get('/', (req, res) => res.send(`Express server on Vercel port ${port}`))
 
