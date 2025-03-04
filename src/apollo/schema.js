@@ -1,6 +1,4 @@
-import { gql } from 'apollo-server-express'
-
-export const schema = gql`
+export const schema = `#graphql
   type Query {
     hello: String
   }
