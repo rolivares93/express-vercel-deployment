@@ -10,7 +10,7 @@ const app = express()
 const httpServer = http.createServer(app)
 const port = process.env.APP_PORT || 4000
 
-await apolloServer.start()
+// await apolloServer.start()
 
 app.use(cors())
 
